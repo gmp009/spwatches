@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SP Watches — Wear OS Apps & Watch Faces</title>
+  <meta name="description" content="SP Watches builds Wear OS watch faces and health-focused wearable apps. Created by Ghulam Murtaza." />
+  <style>
+    :root { --max: 980px; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; color:#111; background:#fff; }
+    header { padding:48px 20px 24px; border-bottom:1px solid #eee; }
+    main { padding:24px 20px 56px; }
+    .wrap { max-width:var(--max); margin:0 auto; }
+    h1 { margin:0 0 10px; font-size:34px; letter-spacing:-.4px; }
+    p { margin:0 0 14px; color:#333; }
+    .badges { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 0; }
+    .badge { font-size:13px; padding:6px 10px; border:1px solid #e6e6e6; border-radius:999px; background:#fafafa; }
+    .cta { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid #ddd; text-decoration:none; color:#111; background:#fff; }
+    .btn.primary { background:#111; color:#fff; border-color:#111; }
+    .grid { display:grid; grid-template-columns:repeat(12,1fr); gap:16px; margin-top:18px; }
+    .card { grid-column: span 6; border:1px solid #eee; border-radius:14px; padding:16px; background:#fff; }
+    .card h3 { margin:0 0 6px; font-size:18px; }
+    .meta { font-size:13px; color:#666; margin:0 0 12px; }
+    footer { padding:20px; border-top:1px solid #eee; color:#666; font-size:13px; }
+    @media (max-width: 720px) { .card { grid-column: span 12; } h1{font-size:28px;} header{padding-top:34px;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>SP Watches</h1>
+      <p>Wear OS watch faces and health-focused wearable apps — built with performance, battery efficiency, and clean UI in mind.</p>
+
+      <div class="badges">
+        <span class="badge">Android</span>
+        <span class="badge">Wear OS</span>
+        <span class="badge">Kotlin</span>
+        <span class="badge">Firebase</span>
+        <span class="badge">AI/ML</span>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" href="YOUR_PLAY_DEVELOPER_URL" target="_blank" rel="noreferrer">Google Play Developer Page</a>
+        <a class="btn" href="https://www.linkedin.com/in/gmp009/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:spapps2023@gmail.com">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h2 style="margin:0 0 10px;">Featured Apps</h2>
+      <p style="margin:0 0 18px;">A small selection of products I’ve designed, developed, and published on Google Play.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Body Temperature Pro</h3>
+          <p class="meta">Wear OS • Health tracking • Calibration • History sync • Firebase</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.spwatches.bodytemperaturepro" target="_blank" rel="noreferrer">View on Google Play</a>
+        </div>
+
+        <div class="card">
+          <h3>Bold Weather (Watch Face)</h3>
+          <p class="meta">Wear OS • Weather • Complications • Customisation</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.spwatches.boldweather" target="_blank" rel="noreferrer">View on Google Play</a>
+        </div>
+
+        <div class="card">
+          <h3>Jelly Dial (Watch Face)</h3>
+          <p class="meta">Wear OS • Bold UI • Multiple themes • Complications</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.spwatches.jellydial" target="_blank" rel="noreferrer">View on Google Play</a>
+        </div>
+
+        <div class="card">
+          <h3>More Watch Faces</h3>
+          <p class="meta">Explore the full catalogue on the Play Store developer page.</p>
+          <a class="btn" href="https://play.google.com/store/apps/dev?id=8645009779152404450" target="_blank" rel="noreferrer">Browse all apps</a>
+        </div>
+      </div>
+
+      <h2 style="margin:28px 0 10px;">About</h2>
+      <p>
+        I’m Ghulam Murtaza — an Android & Wear OS developer with an MSc in Artificial Intelligence (Distinction).
+        I build wearable and mobile experiences that combine practical engineering with AI/ML ideas where they add real value.
+      </p>
+
+      <h2 style="margin:28px 0 10px;">Contact</h2>
+      <p>
+        For collaborations, freelance work, or support: <a href="mailto:spapps2023@gmail.com">spapps2023@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y"></span> SP Watches · Built by Ghulam Murtaza
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
